@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  {% include "head.html" %}
+
+  <body>
+    {% include "gtag.html" %}
+    <!-- Create outer border -->
+    <div class="page-border">
+      <div class="bg--white">
+        <!-- Header -->
+        <header class="align--center pt3 pb2">
+          <div class="container">
+            <h1 class="mb3">Feflin</h1>
+            <h2 class="mb3">Show off what you believe in.</h2>
+            <div class="align--center centered half-width">
+              <img src="{{ filename }}" alt="User Image" />
+            </div>
+          </div>
+        </header>
+        <!-- Body -->
+        <main>
+          <div class="container">
+            <section class="pb3 align--center">
+              <div class="grid-row">
+                <div class="grid-column span-2 bg--light-gray mt2 mr1 p1i">
+                  <img
+                    class="mb1 mt1 circle"
+                    src="data:image/jpeg;base64,{{ chroma }}"
+                    alt="Chroma"
+                    width="400"
+                    height="400"
+                  />
+                  <p class="small">Chroma</p>
+                  <br />
+                  <a
+                    download="chroma.jpg"
+                    href="data:image/jpeg;base64,{{ chroma }}"
+                    title="Chroma"
+                    class="btn btn--sm btn--default"
+                    id="gtm_dl_chroma"
+                    >Download as JPEG
+                  </a>
+                </div>
+                <div class="grid-column span-2 mt2 bg--lightest-gray mr1 p1i">
+                  <img
+                    class="mb1 mt1 circle"
+                    src="data:image/jpeg;base64,{{ blood_red }}"
+                    alt="Blood Red"
+                  />
+                  <p class="small">Blood Red</p>
+                  <br />
+                  <a
+                    download="blood_red.jpg"
+                    href="data:image/jpeg;base64,{{ blood_red }}"
+                    title="Blood Red"
+                    class="btn btn--sm btn--default"
+                    id="gtm_dl_blood_red"
+                    >Download as JPEG
+                  </a>
+                </div>
+                <div class="grid-column span-2 mt2 bg--light-gray mr1 p1i">
+                  <img
+                    class="mb1 mt1 circle"
+                    src="data:image/jpeg;base64,{{ mini_world }}"
+                    alt="Mini World"
+                  />
+                  <p class="small">Mini World</p>
+                  <br />
+                  <a
+                    download="mini_world.jpg"
+                    href="data:image/jpeg;base64,{{ mini_world }}"
+                    title="Mini World"
+                    class="btn btn--sm btn--default"
+                    id="gtm_dl_mini_world"
+                    >Download as JPEG
+                  </a>
+                </div>
+                <div class="grid-column span-2 mt2 bg--lightest-gray mr1 p1i">
+                  <img
+                    class="mb1 mt1 circle"
+                    src="data:image/jpeg;base64,{{ nature }}"
+                    alt="Natural"
+                  />
+                  <p class="small">Natural</p>
+                  <br />
+                  <a
+                    download="natural.jpg"
+                    href="data:image/jpeg;base64,{{ nature }}"
+                    title="Natural"
+                    class="btn btn--sm btn--default"
+                    id="gtm_dl_nature"
+                    >Download as JPEG
+                  </a>
+                </div>
+                <div class="grid-column span-2 mt2 bg--light-gray p1i">
+                  <img
+                    class="mb1 mt1 circle"
+                    src="data:image/jpeg;base64,{{party_hard}}"
+                    alt="Party Hard"
+                  />
+                  <p class="small">Party Hard</p>
+                  <br />
+                  <a
+                    download="party_hard.jpg"
+                    href="data:image/jpeg;base64,{{ party_hard }}"
+                    title="Party Hard"
+                    class="btn btn--sm btn--default"
+                    id="gtm_dl_party_hard"
+                    >Download as JPEG
+                  </a>
+                </div>
+                <div class="grid-column span-2 mt2 bg--lightest-gray mr1 p1i">
+                  <img
+                    class="mb1 mt1 circle"
+                    src="data:image/jpeg;base64,{{ are_you_hired_son }}"
+                    alt="Are ya hired, son?"
+                    width="400"
+                    height="400"
+                  />
+                  <p class="mb1 small">Are ya hired, son?</p>
+                  <br />
+                  <a
+                    download="are_you_hired_son.jpg"
+                    href="data:image/jpeg;base64,{{ are_you_hired_son }}"
+                    title="ImageName"
+                    class="btn btn--sm btn--default"
+                    id="gtm_dl_are_you_hired_son"
+                    >Download as JPEG
+                  </a>
+                </div>
+                <div class="grid-column span-2 mt2 bg--lightest-gray mr1 p1i">
+                  <img
+                    class="mb1 mt1 circle"
+                    src="data:image/jpeg;base64,{{finedog_s}}"
+                    alt="This is fine dog"
+                    width="400"
+                    height="400"
+                    id="s1"
+                  />
+                  <p class="mb1 small">"This is fine" dog</p>
+                  <br />
+                  <div id="smart-button-container">
+                    <div style="text-align: center">
+                      <div id="paypal-button-container"></div>
+                    </div>
+                  </div>
+                  <a
+                    download="finedog.jpg"
+                    title="ImageName"
+                    class="btn btn--sm btn--outline"
+                    id="gtm_dl_finedog"
+                    >$1.39
+                  </a>
+                </div>
+                <div class="grid-column span-2 mt2 bg--lightest-gray mr1 p1i">
+                  <img
+                    class="mb1 mt1 circle"
+                    src="data:image/jpeg;base64,{{shootme_s}}"
+                    alt="Shoot me but I WON'T DIE"
+                    width="400"
+                    height="400"
+                    id="s2"
+                  />
+                  <p class="mb1 small">Shoot me but</p>
+                  <br />
+                  <div id="smart-button-container">
+                    <div style="text-align: center">
+                      <div id="paypal-button-container2"></div>
+                    </div>
+                  </div>
+                  <a
+                    download="shootme.jpg"
+                    title="ImageName"
+                    class="btn btn--sm btn--outline"
+                    id="gtm_dl_shootme"
+                    >$1.39
+                  </a>
+                </div>
+                <div class="grid-column span-2 mt2 bg--lightest-gray mr1 p1i">
+                  <img
+                    class="mb1 mt1 circle"
+                    src="data:image/jpeg;base64,{{sunger_s}}"
+                    alt="Spongebob"
+                    width="400"
+                    height="400"
+                    id="s3"
+                  />
+                  <p class="mb1 small">Spongebob</p>
+                  <br />
+                  <div>
+                  <div id="smart-button-container">
+                    <div style="text-align: center">
+                      <div id="paypal-button-container3"></div>
+                    </div>
+                  </div>
+                  <a
+                    download="spongebob.jpg"
+                    title="ImageName"
+                    class="btn btn--sm btn--outline"
+                    id="gtm_dl_sunger"
+                    >$1.39
+                  </a>
+                </div>
+              </div>
+            </section>
+            <!-- CTA -->
+            {% include "cta.html" %}
+          </div>
+        </main>
+        <!-- Footer -->
+        {% include "footer.html" %}
+      </div>
+    </div>
+
+    <script
+      src="https://www.paypal.com/sdk/js?client-id=sb&enable-funding=venmo&currency=USD"
+      data-sdk-integration-source="button-factory"
+    ></script>
+    <script>
+      function initPayPalButton() {
+        paypal
+          .Buttons({
+            style: {
+              shape: "pill",
+              color: "gold",
+              layout: "vertical",
+              label: "checkout",
+            },
+
+            createOrder: function (data, actions) {
+              return actions.order.create({
+                purchase_units: [
+                  {
+                    description: "Your Twitter Profile Image Update by Feflin",
+                    amount: { currency_code: "USD", value: 1.39 },
+                  },
+                ],
+              });
+            },
+
+            onApprove: function (data, actions) {
+              return actions.order.capture().then(function (orderData) {
+                // Full available details
+                console.log(
+                  "Capture result",
+                  orderData,
+                  JSON.stringify(orderData, null, 2)
+                );
+
+                // Show a success message within this page, e.g.
+                const element = document.getElementById(
+                  "paypal-button-container"
+                );
+                element.innerHTML = "";
+                element.innerHTML = "<h3>Thank you for your payment!</h3>";
+
+                var a = document.getElementById('gtm_dl_finedog').classList.remove("btn--outline");
+                var a = document.getElementById('gtm_dl_finedog').classList.remove("btn--default")
+                var a = document.getElementById('gtm_dl_finedog').textContent="Download as JPEG";
+                var a = document.getElementById('gtm_dl_finedog').href = "data:image/jpeg;base64,{{ finedog }}"
+
+                var b = document.getElementById('s1').src = "data:image/jpeg;base64,{{ finedog }}"
+                
+
+                // Or go to another URL:  actions.redirect('thank_you.html');
+              });
+            },
+
+            onError: function (err) {
+              console.log(err);
+            },
+          })
+          .render("#paypal-button-container");
+      }
+      initPayPalButton();
+      function initPayPalButton2() {
+        paypal
+          .Buttons({
+            style: {
+              shape: "pill",
+              color: "gold",
+              layout: "vertical",
+              label: "checkout",
+            },
+
+            createOrder: function (data, actions) {
+              return actions.order.create({
+                purchase_units: [
+                  {
+                    description: "Your Twitter Profile Image Update by Feflin",
+                    amount: { currency_code: "USD", value: 1.39 },
+                  },
+                ],
+              });
+            },
+
+            onApprove: function (data, actions) {
+              return actions.order.capture().then(function (orderData) {
+                // Full available details
+                console.log(
+                  "Capture result",
+                  orderData,
+                  JSON.stringify(orderData, null, 2)
+                );
+
+                // Show a success message within this page, e.g.
+                const element = document.getElementById(
+                  "paypal-button-container"
+                );
+                element.innerHTML = "";
+                element.innerHTML = "<h3>Thank you for your payment!</h3>";
+
+                var a = document.getElementById('gtm_dl_shootme').classList.remove("btn--outline");
+                var a = document.getElementById('gtm_dl_shootme').classList.remove("btn--default")
+                var a = document.getElementById('gtm_dl_shootme').textContent="Download as JPEG";
+                var a = document.getElementById('gtm_dl_shootme').href = "data:image/jpeg;base64,{{ shootme }}"
+
+                var b = document.getElementById('s2').src = "data:image/jpeg;base64,{{ shootme }}"
+
+                // Or go to another URL:  actions.redirect('thank_you.html');
+              });
+            },
+
+            onError: function (err) {
+              console.log(err);
+            },
+          })
+          .render("#paypal-button-container2");
+      }
+      initPayPalButton2();
+      function initPayPalButton3() {
+        paypal
+          .Buttons({
+            style: {
+              shape: "pill",
+              color: "gold",
+              layout: "vertical",
+              label: "checkout",
+            },
+
+            createOrder: function (data, actions) {
+              return actions.order.create({
+                purchase_units: [
+                  {
+                    description: "Your Twitter Profile Image Update by Feflin",
+                    amount: { currency_code: "USD", value: 1.39 },
+                  },
+                ],
+              });
+            },
+
+            onApprove: function (data, actions) {
+              return actions.order.capture().then(function (orderData) {
+                // Full available details
+                console.log(
+                  "Capture result",
+                  orderData,
+                  JSON.stringify(orderData, null, 2)
+                );
+
+                // Show a success message within this page, e.g.
+                const element = document.getElementById(
+                  "paypal-button-container"
+                );
+                element.innerHTML = "";
+                element.innerHTML = "<h3>Thank you for your payment!</h3>";
+
+                var a = document.getElementById('gtm_dl_sunger').classList.remove("btn--outline");
+                var a = document.getElementById('gtm_dl_sunger').classList.remove("btn--default")
+                var a = document.getElementById('gtm_dl_sunger').textContent="Download as JPEG";
+                var a = document.getElementById('gtm_dl_sunger').href = "data:image/jpeg;base64,{{ sunger }}"
+
+                var b = document.getElementById('s3').src = "data:image/jpeg;base64,{{ sunger }}"
+
+                // Or go to another URL:  actions.redirect('thank_you.html');
+              });
+            },
+
+            onError: function (err) {
+              console.log(err);
+            },
+          })
+          .render("#paypal-button-container3");
+      }
+      initPayPalButton3();
+    </script>
+  </body>
+</html>

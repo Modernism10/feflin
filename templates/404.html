@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en-us">
+{% include "head.html" %}
+
+<body>
+    {% include "gtag.html" %}
+    <!-- Create outer border -->
+    <div class="page-border">
+        <div class="bg--white">
+            <!-- Header -->
+            <header class="align--center pt3 pb2">
+                <div class="container">
+                    <h1 class="mb3">Feflin</h1>
+                    <h2 class="mb3">404</h2>
+                    <p class="mb1">Page not found</p>
+                    <a href="{{ url_for('index') }}">Go back</a>
+                </div>
+            </header>
+            <!-- Body -->
+            <main>
+                <div class="container">
+                </div>
+            </main>
+            <!-- Footer -->
+            <br><br><br><br><br><br><br><br><br><br>
+            {% include "footer.html" %}
+        </div>
+    </div>
+</body>
+
+</html>

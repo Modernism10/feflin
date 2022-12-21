@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  {% include "head.html" %}
+
+  <body>
+    {% include "gtag.html" %}
+    <!-- Create outer border -->
+    <div class="page-border">
+      <div class="bg--white">
+        <!-- Header -->
+        <header class="align--center pt3 pb2">
+          <div class="container">
+            <h1 class="mb3">Feflin</h1>
+            <h2 class="mb3">Show off what you believe in.</h2>
+            <div class="align--center centered w-50">
+              {% with messages = get_flashed_messages() %} {% if messages %} {%
+              for message in messages %}
+              <!-- Do something with the message -->
+              {{ message }} {% endfor %} {% endif %} {% endwith %}
+              <br />
+              <form
+                method="POST"
+                id="twitter_username"
+                action="/twitter"
+                enctype="multipart/form-data"
+              >
+                <div style="width: 100%; overflow: hidden">
+                  <input
+                    class="btn btn--outline inputica"
+                    placeholder="Twitter username"
+                    type="text"
+                    name="text"
+                  />
+                  <input
+                    class="btn btn--default"
+                    type="submit"
+                    value="Find"
+                    name="submit"
+                    id="gtm_find"
+                  />
+                </div>
+              </form>
+              <br />
+              <br />
+              <br />
+              <p>
+                100% Secure - For your security, we process your image without
+                saving it on our servers.
+              </p>
+            </div>
+          </div>
+        </header>
+        <!-- Body -->
+        <main>
+          <div class="container">
+            <section class="pb3 align--center">
+              <div class="grid-row">
+                <div class="grid-column span-2 bg--light-gray mt2 mr1 p1i">
+                  <img
+                    class="mb1 mt1"
+                    src="static/img/frames/u2.png"
+                    alt="Chroma"
+                    width="400"
+                    height="400"
+                  />
+                  <p class="small">Chroma</p>
+                </div>
+                <div class="grid-column span-2 mt2 bg--lightest-gray mr1 p1i">
+                  <img
+                    class="mb1 mt1"
+                    src="static/img/frames/u3.png"
+                    alt="Blood Red"
+                  />
+                  <p class="small">Blood Red</p>
+                </div>
+                <div class="grid-column span-2 mt2 bg--light-gray mr1 p1i">
+                  <img
+                    class="mb1 mt1"
+                    src="static/img/frames/u4.png"
+                    alt="Mini World"
+                  />
+                  <p class="small">Mini World</p>
+                </div>
+                <div class="grid-column span-2 mt2 bg--lightest-gray mr1 p1i">
+                  <img
+                    class="mb1 mt1"
+                    src="static/img/frames/u5.png"
+                    alt="Natural"
+                  />
+                  <p class="small">Natural</p>
+                </div>
+                <div class="grid-column span-2 mt2 bg--light-gray p1i">
+                  <img
+                    class="mb1 mt1"
+                    src="static/img/frames/u6.png"
+                    alt="Adrian Sosa"
+                  />
+                  <p class="small">Adrian Sosa</p>
+                </div>
+                <div class="grid-column span-2 mt2 bg--lightest-gray mr1 p1i">
+                  <img
+                    class="mb1 mt1"
+                    src="static/img/frames/u1.png"
+                    alt="Are ya hired, son?"
+                    width="400"
+                    height="400"
+                  />
+                  <p class="mb1 small">Are ya hired, son?</p>
+                </div>
+                <div class="grid-column span-2 mt2 bg--lightest-gray mr1 p1i">
+                  <img
+                    class="mb1 mt1"
+                    src="static/img/frames/u7.png"
+                    alt="This is fine dog"
+                    width="400"
+                    height="400"
+                  />
+                  <p class="mb1 small">"This is fine" dog</p>
+                </div>
+                <div class="grid-column span-2 mt2 bg--lightest-gray mr1 p1i">
+                  <img
+                    class="mb1 mt1"
+                    src="static/img/frames/u8.png"
+                    alt="Shoot me but I WON'T DIE"
+                    width="400"
+                    height="400"
+                  />
+                  <p class="mb1 small">Shoot me but<br />I WON'T DIE</p>
+                </div>
+                <div class="grid-column span-2 mt2 bg--lightest-gray mr1 p1i">
+                  <img
+                    class="mb1 mt1"
+                    src="static/img/frames/u9.png"
+                    alt="Spongebob"
+                    width="400"
+                    height="400"
+                  />
+                  <p class="mb1 small">Spongebob</p>
+                </div>
+              </div>
+            </section>
+            <section class="align--center pt3 pb3">
+              <p class="h3 mb2">Signup to Newsletter for Free</p>
+              <form
+                action="https://formsubmit.co/modernism.global@gmail.com"
+                method="POST"
+              >
+                <div style="width: 100%; overflow: hidden">
+                  <input
+                    class="btn btn--outline inputica"
+                    placeholder="Your email address"
+                    type="email"
+                    name="email"
+                  />
+                  <input
+                    class="btn btn--default"
+                    type="submit"
+                    value="Done"
+                    name="submit"
+                    id="gtm_find"
+                  />
+                </div>
+              </form>
+            </section>
+            <!-- Testimonials -->
+            <section class="pt2 pb3">
+              <h3 class="align--center mb2">On the record</h3>
+              <div class="grid-row">
+                <div class="grid-column span-one-third mt1">
+                  <blockquote class="blockquote">
+                    <p>> <cite>Well-Designed Frames</cite></p>
+                    <p>Frames are in UltraHD quality.</p>
+                  </blockquote>
+                </div>
+                <div class="grid-column span-one-third mt1">
+                  <blockquote class="blockquote">
+                    <p>> <cite>Whatever you are looking for</cite></p>
+                    <p>Fun, serious, funny, cool ... and more!</p>
+                  </blockquote>
+                </div>
+                <div class="grid-column span-one-third mt1">
+                  <blockquote class="blockquote">
+                    <p>> <cite>Optimized for Twitter</cite></p>
+                    <p>
+                      No matter what size image you upload, your images will be
+                      optimized at 400x400 pixels.
+                    </p>
+                  </blockquote>
+                </div>
+              </div>
+            </section>
+            <!-- CTA -->
+            {% include "cta.html" %}
+          </div>
+        </main>
+        <!-- Footer -->
+        {% include "footer.html" %}
+      </div>
+    </div>
+  </body>
+</html>
