@@ -41,7 +41,7 @@ hr {
 }
 
 pre {
-  font-family: monospace, monospace;
+  font-family: "Inter", sans-serif;
   font-size: 1em;
 }
 
@@ -70,7 +70,7 @@ strong {
 code,
 kbd,
 samp {
-  font-family: monospace, monospace;
+  font-family: "Inter", sans-serif;
   font-size: 1em;
 }
 
@@ -126,7 +126,7 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 100%;
   line-height: 1.15;
   margin: 0;
@@ -298,7 +298,7 @@ code,
 kbd,
 pre,
 samp {
-  font-family: "Space Mono", Monaco, Menlo, Consolas, monospace;
+  font-family: "Inter", sans-serif;
 }
 
 b,
@@ -436,7 +436,7 @@ svg {
 html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  font-family: "Space Mono", Monaco, Menlo, Consolas, monospace;
+  font-family: "Inter", sans-serif;
   font-size: 15px;
   font-style: normal;
   font-weight: 400;
@@ -491,7 +491,7 @@ img::-moz-selection {
   border-width: 1px;
   cursor: pointer;
   display: inline-block;
-  font-family: "Space Mono", Monaco, Menlo, Consolas, monospace;
+  font-family: "Inter", sans-serif;
   font-size: 1rem;
   font-weight: 700;
   line-height: 1.6rem;
@@ -610,7 +610,7 @@ video {
   border-radius: 7px;
   color: #4e504d;
   display: block;
-  font-family: "Space Mono", Monaco, Menlo, Consolas, monospace;
+  font-family: "Inter", sans-serif;
   font-size: 1rem;
   line-height: 1.6rem;
   max-width: 100%;
@@ -1041,7 +1041,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Space Mono", Monaco, Menlo, Consolas, monospace;
+  font-family: "Inter", sans-serif;
   font-weight: 700;
   line-height: 1;
   margin-top: 0;
@@ -1082,7 +1082,7 @@ hr {
 
 .blockquote {
   border: none;
-  font-family: "Space Mono", Monaco, Menlo, Consolas, monospace;
+  font-family: "Inter", sans-serif;
   font-size: 1rem;
   max-width: 100%;
   margin-bottom: 0.8rem;
@@ -1135,15 +1135,15 @@ hr {
 }
 
 .font--heading {
-  font-family: "Space Mono", Monaco, Menlo, Consolas, monospace;
+  font-family: "Inter", sans-serif;
 }
 
 .font--reading {
-  font-family: "Space Mono", Monaco, Menlo, Consolas, monospace;
+  font-family: "Inter", sans-serif;
 }
 
 .font--ui {
-  font-family: "Space Mono", Monaco, Menlo, Consolas, monospace;
+  font-family: "Inter", sans-serif;
 }
 
 .font--serif {
@@ -1152,8 +1152,8 @@ hr {
 
 .page-border {
   padding: 0.8rem;
-  background-color: #2afadf;
-  background-image: linear-gradient(135deg, #2afadf 10%, #4c83ff 100%);
+  background-color: #6337f5;
+  background-image: linear-gradient(135deg, #6337f5 10%, #df44cc 100%);
 }
 
 .border--full {
